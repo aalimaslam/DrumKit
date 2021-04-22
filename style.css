@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:whitesmoke;
+}
+.container{
+    padding:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drums{
+    height:100px;
+    width:100px;
+    margin:10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .3s;
+}
+.drumContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.drums:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.drum1{
+    background:rgb(124, 49, 124);
+}
+.drum2{
+    background:violet;
+}
+.drum3{
+    background:#123456;
+}
+.drum4{
+    background:goldenrod;
+}
+.drum5{
+    background:teal;
+}
+.drum6{
+    background:black;
+}
+.drum7{
+    background:white;
+}
+.info{
+    position: absolute;
+    bottom: 50px;
+    padding:20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.info p{
+    color:#fff;
+    text-shadow: 1px 2px 3px black;
+    font-size: 1.3rem;
+}
