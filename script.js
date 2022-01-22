@@ -27,23 +27,30 @@ window.addEventListener('keypress',()=>{
     // console.log(`The code of key Pressed is ${event.keyCode}`);
     let x = event.keyCode;
     if(x==a){
-        audio1.play()
+        audio1.currentTime = 0;
+        audio1.play();
     }
     else if(x === s){
+        audio2.currentTime = 0;
         audio2.play();
     }else if(x === d){
+        audio3.currentTime = 0;
         audio3.play();
     }
     else if(x === g){
+        audio4.currentTime = 0;
         audio4.play();
     }
     else if(x === j){
+        audio5.currentTime = 0;
         audio5.play();
     }
     else if(x === k){
+        audio6.currentTime = 0;
         audio6.play();
     }
     else if(x === l){
+        audio7.currentTime = 0;
         audio7.play();
     }
 })
