@@ -9,6 +9,7 @@ const drums = document.querySelectorAll('.drums');
 const audios = document.querySelectorAll('.audios')
 for(let i= 0 ; i< drums.length; i++){
     drums[i].addEventListener('click',()=>{
+        audios[i].currentTime = 0;
         audios[i].play()
     })
 }
@@ -23,7 +24,7 @@ let k = 107;
 let l = 108;
 
 
-window.addEventListener('keypress',()=>{
+window.addEventListener('keydown',()=>{
     // console.log(`The code of key Pressed is ${event.keyCode}`);
     let x = event.keyCode;
     if(x==a){
